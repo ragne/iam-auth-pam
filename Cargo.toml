@@ -1,0 +1,13 @@
+[package]
+name = "iam-auth-pam"
+version = "0.1.0"
+authors = ["Edward Makhlin <me@lain.im>"]
+edition = "2018"
+
+[lib]
+crate-type = ["dylib"]
+name = "iam_auth_pam"
+
+[dependencies]
+pam = { git = "https://github.com/ragne/pam-rs", branch = "fix-the-crate" }
+
